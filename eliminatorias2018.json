@@ -1,0 +1,1122 @@
+[
+  {
+    "date": "8 de octubre de 2015, 16:00 (UTC-4)",
+    "teams": [
+      "Bolivia",
+      "Uruguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png"
+    ],
+    "score": [
+      "0",
+      "2"
+    ],
+    "round": 1
+  },
+  {
+    "date": "28 de marzo de 2017, 21:15 (UTC-5)",
+    "teams": [
+      "Perú",
+      "Uruguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 14
+  },
+  {
+    "date": "8 de octubre de 2015, 16:30 (UTC-4:30)",
+    "teams": [
+      "Venezuela",
+      "Paraguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+    ],
+    "score": [
+      "0",
+      "1"
+    ],
+    "round": 1
+  },
+  {
+    "date": "8 de octubre de 2015, 20:30 (UTC-3)",
+    "teams": [
+      "Chile",
+      "Brasil"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+    ],
+    "score": [
+      "2",
+      "0"
+    ],
+    "round": 1
+  },
+  {
+    "date": "8 de octubre de 2015, 21:00 (UTC-3)",
+    "teams": [
+      "Argentina",
+      "Ecuador"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+    ],
+    "score": [
+      "0",
+      "2"
+    ],
+    "round": 1
+  },
+  {
+    "date": "13 de octubre de 2015, 16:00 (UTC-5)",
+    "teams": [
+      "Ecuador",
+      "Bolivia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+    ],
+    "score": [
+      "2",
+      "0"
+    ],
+    "round": 2
+  },
+  {
+    "date": "13 de octubre de 2015, 20:00 (UTC-3)",
+    "teams": [
+      "Uruguay",
+      "Colombia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 2
+  },
+  {
+    "date": "13 de octubre de 2015, 21:00 (UTC-3)",
+    "teams": [
+      "Paraguay",
+      "Argentina"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+    ],
+    "score": [
+      "0",
+      "0"
+    ],
+    "round": 2
+  },
+  {
+    "date": "13 de octubre de 2015, 22:00 (UTC-3)",
+    "teams": [
+      "Brasil",
+      "Venezuela"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png"
+    ],
+    "score": [
+      "3",
+      "1"
+    ],
+    "round": 2
+  },
+  {
+    "date": "13 de octubre de 2015, 21:15 (UTC-5)",
+    "teams": [
+      "Perú",
+      "Chile"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+    ],
+    "score": [
+      "3",
+      "4"
+    ],
+    "round": 2
+  },
+  {
+    "date": "12 de noviembre de 2015, 16:00 (UTC-4)",
+    "teams": [
+      "Bolivia",
+      "Venezuela"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png"
+    ],
+    "score": [
+      "4",
+      "2"
+    ],
+    "round": 3
+  },
+  {
+    "date": "12 de noviembre de 2015, 16:00 (UTC-5)",
+    "teams": [
+      "Ecuador",
+      "Uruguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 3
+  },
+  {
+    "date": "12 de noviembre de 2015, 20:30 (UTC-3)",
+    "teams": [
+      "Chile",
+      "Colombia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+    ],
+    "score": [
+      "1",
+      "1"
+    ],
+    "round": 3
+  },
+  {
+    "date": "13 de noviembre de 2015, 21:00 (UTC-3)",
+    "teams": [
+      "Argentina",
+      "Brasil"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+    ],
+    "score": [
+      "1",
+      "1"
+    ],
+    "round": 3
+  },
+  {
+    "date": "13 de noviembre de 2015, 21:15 (UTC-5)",
+    "teams": [
+      "Perú",
+      "Paraguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+    ],
+    "score": [
+      "1",
+      "0"
+    ],
+    "round": 3
+  },
+  {
+    "date": "17 de noviembre de 2015, 15:45 (UTC-5)",
+    "teams": [
+      "Colombia",
+      "Argentina"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+    ],
+    "score": [
+      "0",
+      "1"
+    ],
+    "round": 4
+  },
+  {
+    "date": "17 de noviembre de 2015, 16:30 (UTC-4:30)",
+    "teams": [
+      "Venezuela",
+      "Ecuador"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+    ],
+    "score": [
+      "1",
+      "3"
+    ],
+    "round": 4
+  },
+  {
+    "date": "17 de noviembre de 2015, 20:00 (UTC-3)",
+    "teams": [
+      "Uruguay",
+      "Chile"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 4
+  },
+  {
+    "date": "17 de noviembre de 2015, 20:00 (UTC-3)",
+    "teams": [
+      "Paraguay",
+      "Bolivia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 4
+  },
+  {
+    "date": "17 de noviembre de 2015, 21:00 (UTC-3)",
+    "teams": [
+      "Brasil",
+      "Perú"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 4
+  },
+  {
+    "date": "24 de marzo de 2016, 16:00 (UTC-4)",
+    "teams": [
+      "Bolivia",
+      "Colombia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+    ],
+    "score": [
+      "2",
+      "3"
+    ],
+    "round": 5
+  },
+  {
+    "date": "24 de marzo de 2016, 16:00 (UTC-5)",
+    "teams": [
+      "Ecuador",
+      "Paraguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 5
+  },
+  {
+    "date": "24 de marzo de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Chile",
+      "Argentina"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+    ],
+    "score": [
+      "1",
+      "2"
+    ],
+    "round": 5
+  },
+  {
+    "date": "24 de marzo de 2016, 21:15 (UTC-5)",
+    "teams": [
+      "Perú",
+      "Venezuela"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 5
+  },
+  {
+    "date": "25 de marzo de 2016, 21:45 (UTC-3)",
+    "teams": [
+      "Brasil",
+      "Uruguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 5
+  },
+  {
+    "date": "29 de marzo de 2016, 15:30 (UTC-5)",
+    "teams": [
+      "Colombia",
+      "Ecuador"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+    ],
+    "score": [
+      "3",
+      "1"
+    ],
+    "round": 6
+  },
+  {
+    "date": "29 de marzo de 2016, 20:00 (UTC-3)",
+    "teams": [
+      "Uruguay",
+      "Perú"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+    ],
+    "score": [
+      "1",
+      "0"
+    ],
+    "round": 6
+  },
+  {
+    "date": "29 de marzo de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Argentina",
+      "Bolivia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+    ],
+    "score": [
+      "2",
+      "0"
+    ],
+    "round": 6
+  },
+  {
+    "date": "29 de marzo de 2016, 19:00 (UTC-4:30)",
+    "teams": [
+      "Venezuela",
+      "Chile"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+    ],
+    "score": [
+      "1",
+      "4"
+    ],
+    "round": 6
+  },
+  {
+    "date": "29 de marzo de 2016, 20:45 (UTC-4)",
+    "teams": [
+      "Paraguay",
+      "Brasil"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 6
+  },
+  {
+    "date": "1 de septiembre de 2016, 16:00 (UTC-4)",
+    "teams": [
+      "Bolivia",
+      "Perú"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+    ],
+    "score": [
+      "0",
+      "3"
+    ],
+    "round": 7
+  },
+  {
+    "date": "1 de septiembre de 2016, 15:30 (UTC-5)",
+    "teams": [
+      "Colombia",
+      "Venezuela"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png"
+    ],
+    "score": [
+      "2",
+      "0"
+    ],
+    "round": 7
+  },
+  {
+    "date": "1 de septiembre de 2016, 16:00 (UTC-5)",
+    "teams": [
+      "Ecuador",
+      "Brasil"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+    ],
+    "score": [
+      "0",
+      "3"
+    ],
+    "round": 7
+  },
+  {
+    "date": "1 de septiembre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Argentina",
+      "Uruguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png"
+    ],
+    "score": [
+      "1",
+      "0"
+    ],
+    "round": 7
+  },
+  {
+    "date": "1 de septiembre de 2016, 20:00 (UTC-4)",
+    "teams": [
+      "Paraguay",
+      "Chile"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 7
+  },
+  {
+    "date": "8 de octubre de 2015, 15:30 (UTC-5)",
+    "teams": [
+      "Colombia",
+      "Perú"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+    ],
+    "score": [
+      "2",
+      "0"
+    ],
+    "round": 1
+  },
+  {
+    "date": "6 de septiembre de 2016, 19:30 (UTC-4)",
+    "teams": [
+      "Venezuela",
+      "Argentina"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 8
+  },
+  {
+    "date": "6 de septiembre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Chile",
+      "Bolivia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 8
+  },
+  {
+    "date": "6 de septiembre de 2016, 20:45 (UTC-4)",
+    "teams": [
+      "Brasil",
+      "Colombia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 8
+  },
+  {
+    "date": "6 de septiembre de 2016, 21:15 (UTC-5)",
+    "teams": [
+      "Perú",
+      "Ecuador"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 8
+  },
+  {
+    "date": "6 de octubre de 2016, 16:00 (UTC-5)",
+    "teams": [
+      "Ecuador",
+      "Chile"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 9
+  },
+  {
+    "date": "6 de octubre de 2016, 20:00 (UTC-3)",
+    "teams": [
+      "Uruguay",
+      "Venezuela"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 9
+  },
+  {
+    "date": "6 de octubre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Paraguay",
+      "Colombia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+    ],
+    "score": [
+      "0",
+      "1"
+    ],
+    "round": 9
+  },
+  {
+    "date": "6 de octubre de 2016, 21:45 (UTC-3)",
+    "teams": [
+      "Brasil",
+      "Bolivia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+    ],
+    "score": [
+      "5",
+      "0"
+    ],
+    "round": 9
+  },
+  {
+    "date": "6 de octubre de 2016, 21:15 (UTC-5)",
+    "teams": [
+      "Perú",
+      "Argentina"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 9
+  },
+  {
+    "date": "11 de octubre de 2016, 16:00 (UTC-4)",
+    "teams": [
+      "Bolivia",
+      "Ecuador"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 10
+  },
+  {
+    "date": "11 de octubre de 2016, 15:30 (UTC-5)",
+    "teams": [
+      "Colombia",
+      "Uruguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 10
+  },
+  {
+    "date": "11 de octubre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Argentina",
+      "Paraguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+    ],
+    "score": [
+      "0",
+      "1"
+    ],
+    "round": 10
+  },
+  {
+    "date": "11 de octubre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Chile",
+      "Perú"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 10
+  },
+  {
+    "date": "11 de octubre de 2016, 20:30 (UTC-4)",
+    "teams": [
+      "Venezuela",
+      "Brasil"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+    ],
+    "score": [
+      "0",
+      "2"
+    ],
+    "round": 10
+  },
+  {
+    "date": "10 de noviembre de 2016, 15:30 (UTC-5)",
+    "teams": [
+      "Colombia",
+      "Chile"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+    ],
+    "score": [
+      "0",
+      "0"
+    ],
+    "round": 11
+  },
+  {
+    "date": "10 de noviembre de 2016, 20:00 (UTC-3)",
+    "teams": [
+      "Uruguay",
+      "Ecuador"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 11
+  },
+  {
+    "date": "10 de noviembre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Paraguay",
+      "Perú"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+    ],
+    "score": [
+      "1",
+      "4"
+    ],
+    "round": 11
+  },
+  {
+    "date": "10 de noviembre de 2016, 19:45 (UTC-4)",
+    "teams": [
+      "Venezuela",
+      "Bolivia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+    ],
+    "score": [
+      "5",
+      "0"
+    ],
+    "round": 11
+  },
+  {
+    "date": "10 de noviembre de 2016, 20:45 (UTC-3)",
+    "teams": [
+      "Brasil",
+      "Argentina"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 11
+  },
+  {
+    "date": "15 de noviembre de 2016, 16:00 (UTC-4)",
+    "teams": [
+      "Bolivia",
+      "Paraguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+    ],
+    "score": [
+      "1",
+      "0"
+    ],
+    "round": 12
+  },
+  {
+    "date": "15 de noviembre de 2016, 16:00 (UTC-5)",
+    "teams": [
+      "Ecuador",
+      "Venezuela"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 12
+  },
+  {
+    "date": "15 de noviembre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Chile",
+      "Uruguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png"
+    ],
+    "score": [
+      "3",
+      "1"
+    ],
+    "round": 12
+  },
+  {
+    "date": "15 de noviembre de 2016, 20:30 (UTC-3)",
+    "teams": [
+      "Argentina",
+      "Colombia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 12
+  },
+  {
+    "date": "15 de noviembre de 2016, 21:15 (UTC-5)",
+    "teams": [
+      "Perú",
+      "Brasil"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+    ],
+    "score": [
+      "0",
+      "2"
+    ],
+    "round": 12
+  },
+  {
+    "date": "23 de marzo de 2017, 15:30 (UTC-5)",
+    "teams": [
+      "Colombia",
+      "Bolivia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+    ],
+    "score": [
+      "1",
+      "0"
+    ],
+    "round": 13
+  },
+  {
+    "date": "23 de marzo de 2017, 20:00 (UTC-3)",
+    "teams": [
+      "Uruguay",
+      "Brasil"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+    ],
+    "score": [
+      "1",
+      "4"
+    ],
+    "round": 13
+  },
+  {
+    "date": "23 de marzo de 2017, 20:00 (UTC-3)",
+    "teams": [
+      "Paraguay",
+      "Ecuador"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+    ],
+    "score": [
+      "2",
+      "1"
+    ],
+    "round": 13
+  },
+  {
+    "date": "23 de marzo de 2017, 19:30 (UTC-4)",
+    "teams": [
+      "Venezuela",
+      "Perú"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+    ],
+    "score": [
+      "2",
+      "2"
+    ],
+    "round": 13
+  },
+  {
+    "date": "23 de marzo de 2017, 20:30 (UTC-3)",
+    "teams": [
+      "Argentina",
+      "Chile"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+    ],
+    "score": [
+      "1",
+      "0"
+    ],
+    "round": 13
+  },
+  {
+    "date": "28 de marzo de 2017, 16:00 (UTC-4)",
+    "teams": [
+      "Bolivia",
+      "Argentina"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+    ],
+    "score": [
+      "2",
+      "0"
+    ],
+    "round": 14
+  },
+  {
+    "date": "28 de marzo de 2017, 16:00 (UTC-5)",
+    "teams": [
+      "Ecuador",
+      "Colombia"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+    ],
+    "score": [
+      "0",
+      "2"
+    ],
+    "round": 14
+  },
+  {
+    "date": "28 de marzo de 2017, 19:00 (UTC-3)",
+    "teams": [
+      "Chile",
+      "Venezuela"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Venezuela_%28Variant%29.svg/20px-Flag_of_Venezuela_%28Variant%29.svg.png"
+    ],
+    "score": [
+      "3",
+      "1"
+    ],
+    "round": 14
+  },
+  {
+    "date": "28 de marzo de 2017, 21:45 (UTC-3)",
+    "teams": [
+      "Brasil",
+      "Paraguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+    ],
+    "score": [
+      "3",
+      "0"
+    ],
+    "round": 14
+  },
+  {
+    "date": "6 de septiembre de 2016, 20:00 (UTC-3)",
+    "teams": [
+      "Uruguay",
+      "Paraguay"
+    ],
+    "flags": [
+      "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/20px-Flag_of_Uruguay.svg.png",
+      "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+    ],
+    "score": [
+      "4",
+      "0"
+    ],
+    "round": 8
+  }
+]

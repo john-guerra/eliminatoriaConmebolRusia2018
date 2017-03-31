@@ -1,0 +1,20 @@
+{
+  "name": "eliminatoriasConmebol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getWikiResults.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jquery": "^3.2.1",
+    "loadash": "0.0.1",
+    "lodash": "^4.17.4",
+    "node-inspector": "^1.0.0",
+    "scraperjs": "^1.2.0"
+  }
+}
