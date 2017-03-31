@@ -8,3 +8,5 @@ El script `getWikiResultsEliminatory.js` obtiene los resultados de [wikipedia](h
 Demo en http://johnguerra.co/viz/eliminatoriaMundial/
 ![Screenshot: Colombia regresa al tercer puesto](http://johnguerra.co/viz/eliminatoriaMundial/screenshots/screenshot1.png)
 ![Screenshot: Clasificación por puntos](http://johnguerra.co/viz/eliminatoriaMundial/screenshots/screenshot2.png)
+
+[Creative Commons Attribution-ShareAlike 4.0 International License.](https://creativecommons.org/licenses/by-sa/4.0/)
