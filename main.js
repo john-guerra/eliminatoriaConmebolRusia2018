@@ -6,13 +6,13 @@
 
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
   width = 960 - margin.left - margin.right,
-  height = 600 - margin.top - margin.bottom;
+  height = 500 - margin.top - margin.bottom;
 
-var svg = d3.select("body").append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+// var svg = d3.select("body").append("svg")
+//   .attr("width", width + margin.left + margin.right)
+//   .attr("height", height + margin.top + margin.bottom)
+//   .append("g")
+//   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var myBumpChart,
   rounds,
@@ -88,9 +88,93 @@ function computeRanking(data) {
 
   return result;
 }
+
+
+
+function redrawRanges(filteredData) {
+
+  var maxRound = d3.max(filteredData, function (d) { return d.round; });
+  var margin = myBumpChart.margin();
+  var boxW = myBumpChart.boxW(),
+    boxH = myBumpChart.boxH();
+  var separation;
+  var lastRound = filteredData.filter(function (d) {
+    return d.round === maxRound;
+  }).sort(function (a, b) { return d3.ascending(a.ranking, b.ranking); });
+
+  var classifiedData = [
+    {range: [lastRound[0],lastRound[3]],
+      name: "Clasifican",
+      color: "#00c70d"
+    },
+    {range: [lastRound[4],lastRound[4]],
+      name: "Repechaje",
+      color: "#e6de42"
+    },
+    {range: [lastRound[5],lastRound[lastRound.length-1]],
+      name: "Eliminados",
+      color: "#f55a5a"
+    }
+  ]
+
+  var classifiedSel = d3.select("#chart svg")
+    .selectAll(".classified-range")
+    .data(classifiedData, function (d) { return d.name; } );
+
+  var classifiedEnter = classifiedSel.enter()
+    .insert("g", ":first-child")
+    .attr("class", "classified-range");
+  classifiedEnter.append("rect")
+    .attr("class" ,"range");
+  classifiedEnter.append("text")
+    .attr("class" ,"legend");
+
+  var chartY = function (val) {
+    return myBumpChart.yScale()(myBumpChart.y()(val));
+  }
+
+  //How much space is there between two teams
+  separation = chartY(lastRound[1]) - chartY(lastRound[0]);
+  classifiedSel
+    .transition()
+    .duration(500)
+    .attr("transform", function (d) {
+      return   "translate(" + (margin.left - boxW/2) +"," + (chartY(d.range[0]) - separation/2 + margin.top) + ")";
+    })
+    .select("rect")
+      .style("fill", function (d) { return d.color; })
+      .style("opacity", 0.1)
+      .transition()
+      .duration(500)
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("rx", 15)
+      .attr("ry", 15)
+      .attr("width", myBumpChart.width() -margin.left - margin.right + boxW)
+      .attr("height", function (d) { return chartY(d.range[1]) - chartY(d.range[0]) + separation; });
+  classifiedSel
+    .select(".legend")
+      .style("text-anchor", "middle")
+      .text(function (d) { return d.name; })
+      .transition()
+      .duration(500)
+
+      // .attr("dx", myBumpChart.width() - margin.left )
+      // .attr("dy", 25)
+
+      .attr("transform", function (d) {
+        return "translate("+ (myBumpChart.width() - margin.left - margin.right + boxW +5 ) +","+ ((chartY(d.range[1]) - chartY(d.range[0]) + separation)/2) +") rotate(90)";
+      });
+
+  classifiedSel.exit().remove();
+
+}
+
 function redraw() {
     var isBump = d3.select("#chBump").property("checked");
     var maxRound = +d3.select("#slRound").property("value");
+
+    var filteredData = ranking.filter(function (d) { return d.round<=maxRound; });
     myBumpChart
       .y(function (d) { return isBump? d.ranking: d.points; })
       // .y(function (d) { return d.points; })
@@ -105,14 +189,24 @@ function redraw() {
       // .topN(numPhotos)
       .xLabel("Ronda")
       .yLabel(isBump ? "Posición" : "Puntos")
-      .height(height)
+      .height(window.innerWidth > 700 ? height : window.innerWidth > 300 ? 400: 200 )
+      // .height(400)
+      // .width(document.getElementById("chart").offsetWidth)
       .width(document.getElementById("chart").offsetWidth)
       // .width(width);
-    console.log(maxRound);
-    d3.select("#chart")
-      .datum(ranking.filter(function (d) { return d.round<=maxRound; }))
+    // console.log(maxRound);
 
+
+
+
+
+
+    d3.select("#chart")
+      .datum(filteredData)
       .call(myBumpChart);
+
+    redrawRanges(filteredData, maxRound);
+
 }
 
 d3.json("eliminatorias2018.json", function(error, data) {
@@ -136,6 +230,8 @@ d3.json("eliminatorias2018.json", function(error, data) {
 
     .width(document.getElementById("chart").offsetWidth);
 
+
+
   redraw();
 
   window.addEventListener("resize", redraw);
@@ -144,6 +240,9 @@ d3.json("eliminatorias2018.json", function(error, data) {
     .attr("min", rounds[0])
     .attr("max", rounds[1])
     .on("input", redraw);
+
+
+
 
 });
 

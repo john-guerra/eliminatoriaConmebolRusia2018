@@ -10,18 +10,35 @@
 			font-family: 'Droid Sans', sans-serif;
 			margin:20px;
 		}
-		h1 {
+		h1, .legend {
 			font-family: 'Fjalla One', sans-serif;
+
+		}
+		.legend {
+			font-size: 14pt;
+		}
+		.axis {
+			font-size: 10pt;
 		}
 		p, svg {
 			font-family: 'Droid Sans', sans-serif;
+		}
+
+		.classified-range {
+			pointer-events: none;
+		}
+		.classified-range .legend {
+	    fill: #cacaca;
+    	font-weight: bold;
+    	font-family: 'Fjalla One', sans-serif;
+    	font-size: 16pt;
 		}
 		.domain {
 			fill:  none;
 		}
 
 		input[type=checkbox] {
-		  zoom:1.7;
+		  zoom:1.3;
 		  transform:scale(1.7);
 		  -ms-transform:scale(1.7);
 		  -webkit-transform:scale(1.7);
@@ -39,9 +56,12 @@
 			position: relative;
 			top: 3pt;
 			left: 5pt;
-			font-size: 14pt;
+			font-size: 120%;
 		}
 
+		#chart {
+			width: 100%;
+		}
 
 
 		#chart .line {
@@ -105,31 +125,41 @@
 	/*stroke: white;*/
 }
 
-#chart text {
+/*#chart text {
 	font-size: 12pt;
 }
-
+*/
 #slRound {
 	width: 100%;
 /*	position: relative;
 top:-30px;*/
 }
 
-
+/*.classified-range .legend {
+	fill: white;
+}
+*/
 
 </style>
 </head>
 <body>
 
 	<h1>Eliminatorias Mundial Rusia 2018</h1>
-	<p>Evolución de la tabla de clasificaciones de la Conmebol para el mundial Rusia 2018. Seleccione un país para mostrar su evolución</p>
+	<p>Observe la evolución de las clasificaciones de la Conmebol para las eliminatorias del Mundial Rusia 2018. Selecciona un país para ver sus movimientos en la tabla.</p>
 	<input id="chBump" type="checkbox" checked="true" ><label id="lbBump" for="chBump"> Ver por puestos</label>
 	<br><br>
+
 	<div id="chart"></div>
+
 	<p>Filtre por la ronda: </p>
-	<input id="slRound" type="range"/>
+	<input id="slRound" type="range" />
+
+
 	<p>Desarrollado por <a href="http://johnguerra.co">John Alexis Guerra Gómez</a>.<br>Basado en los <a href="https://es.wikipedia.org/wiki/Anexo:Resultados_de_la_clasificaci%C3%B3n_de_Conmebol_para_la_Copa_Mundial_de_F%C3%BAtbol_de_2018">resultados de la eliminatoria de wikipedia</a>.<br>Puede bajar los datos procesados con todos <a href="./eliminatorias2018.json">los resultados de los partidos de la Conmebol para el mundial Rusia 2018 en formato JSON aquí</a>, y <a href="https://github.com/john-guerra/eliminatoriaConmebolRusia2018">acá puede encontrar el repositorio de Github con el código fuente</a></p>
 	<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este trabajo está publicado bajo la licencia <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+
+
 	<script src="./d3.v3.min.js"></script>
 	<script src="./bumpChartPhotos.js"></script>
 	<script src="./main.js"></script>

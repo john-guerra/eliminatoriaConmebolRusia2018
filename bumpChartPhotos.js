@@ -4,7 +4,7 @@
 
 //Based in http://bost.ocks.org/mike/chart/time-series-chart.js
 function bumpChartPhotos() {
-    var margin = {top: 50, right: 50, bottom: 90, left: 90},
+    var margin = {top: 50, right: 50, bottom: 20, left: 85},
     width = 760,
     height = 150,
     topN = 10,
@@ -33,10 +33,11 @@ function bumpChartPhotos() {
         // .range(["#fff7fb", "#014636"]),
     // xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(d3.time.days, 1).tickSize(6,0),
     // xAxis = d3.svg.axis().scale(xScale).orient("bottom").tickSize(6,0),
-    xAxis = d3.svg.axis().scale(xScale).orient("bottom").tickFormat(d3.format("d")),
+    xAxis = d3.svg.axis().scale(xScale).orient("top").tickFormat(d3.format("d")),
     yAxis = d3.svg.axis().scale(yScale).orient("left").tickSize(- (width-margin.left -margin.right + BOX_WIDTH)),
     line = d3.svg.line().x(X).y(Y).interpolate("cardinal"),
     isBumpChart = true,
+    showBoxes = false,
     colorByRank = false,
     dAvgRank,
     dFirstDate,
@@ -100,24 +101,14 @@ function bumpChartPhotos() {
 
             // Update the x-scale.
             xScale
-                .domain(d3.extent(data, xValue))
+                .domain(d3.extent(data, xValue));
                 // .domain([0, 50])
-                .range([0, width - margin.left - margin.right]);
+
 
             // Update the y-scale.
             yScale
                 .domain(d3.extent(data, yValue));
 
-            if (isBumpChart) {
-                yScale.range([0, height - margin.top - margin.bottom]);
-
-                // colScale.domain([d3.max(nestedData, function (d) { return d.avg; }),
-                //     d3.min(nestedData, function (d) { return d.avg; })]);
-            } else {
-                yScale.range([height - margin.top - margin.bottom, 0]);
-
-                // colScale.domain(d3.extent(nestedData, function (d) { return d.avg; }));
-            }
 
             // Select the svg element, if it exists.
             svg = d3.select(this).selectAll("svg").data([nestedData]);
@@ -180,8 +171,8 @@ function bumpChartPhotos() {
             line = d3.svg.line().x(X).y(Y).interpolate("linear");
             // IMG_HEIGHT = IMG_WIDTH = MIN_IMG_WH;
         }
-        IMG_HEIGHT = height * 0.9 / topN;
-        IMG_WIDTH = width / numDates * 0.5;
+        IMG_HEIGHT = height * 1.2 / topN;
+        IMG_WIDTH = width / numDates * 0.7;
         IMG_HEIGHT = Math.max(MIN_IMG_WH, IMG_HEIGHT);
         IMG_WIDTH = Math.max(MIN_IMG_WH, IMG_WIDTH);
 
@@ -190,24 +181,44 @@ function bumpChartPhotos() {
         BOX_WIDTH = IMG_WIDTH * 1;
         BOX_HEIGHT = IMG_HEIGHT * 0.3;
 
+        margin.left = width > 700 ? 90 : 65;
+        margin.top = width > 700 ? 90 : 50;
+        margin.right = width > 700 ? 70 : 70;
+        margin.bottom = width > 700 ? 50 : 50;
+
+        xScale.range([0, width - margin.left - margin.right]);
+        if (isBumpChart) {
+            yScale.range([0, height - margin.top - margin.bottom]);
+
+            // colScale.domain([d3.max(nestedData, function (d) { return d.avg; }),
+            //     d3.min(nestedData, function (d) { return d.avg; })]);
+        } else {
+            yScale.range([height - margin.top - margin.bottom, 0]);
+
+            // colScale.domain(d3.extent(nestedData, function (d) { return d.avg; }));
+        }
+
 
         xAxis.scale(xScale);
         yAxis.scale(yScale);
        // Update the x-axis.
         svg.select(".mainArea").select(".x.axis")
-            .attr("transform", "translate(0," + ( height - margin.top - margin.bottom + IMG_HEIGHT / 2 + 15  ) + ")")
+            // .attr("transform", "translate(0," + ( height - margin.top - margin.bottom + IMG_HEIGHT / 2 + 15  ) + ")")
+            .attr("transform", "translate(0," + (-10) + ")")
             .call(xAxis)
             .select(".legend").text(xLabel)
-                .attr("dx", width-margin.left -margin.right + 8)
+                .attr("dy", -25 )
+                .attr("dx", width - margin.left - margin.right + 6)
                 .style("text-anchor", "end");
+
 
 
         // Update the y-axis.
         yAxis.tickSize(- (width-margin.left -margin.right + BOX_WIDTH));
         svg.select(".mainArea").select(".y.axis")
             .call(yAxis)
-            .attr("transform", "translate(" + (-1 * BOX_WIDTH /2 - 20) +  ",0)")
-            .select(".legend").text(yLabel).attr("dy", -15).attr("dx", -7).style("text-anchor", "middle");
+            .attr("transform", "translate(" + (-1 * BOX_WIDTH /2 - 20) +  "," + 0 +")")
+            .select(".legend").text(yLabel).attr("dy", -25).attr("dx", -7).style("text-anchor", "middle");
 
 
 
@@ -253,6 +264,7 @@ function bumpChartPhotos() {
         lines.exit()
             .remove();
 
+
         // Update the boxes
         var boxes = svg.select(".boxes").selectAll(".box")
             .data( data,
@@ -271,7 +283,10 @@ function bumpChartPhotos() {
                     (yScale(yValue(d, i))) + ")";
                 })
 
-        boxEnter.append("rect");
+        if (showBoxes) {
+            boxEnter.append("rect");
+        }
+
         boxEnter.append("image")
             .append("title")
                 .text(function (d,i) {
@@ -291,17 +306,20 @@ function bumpChartPhotos() {
                 return "translate(" + (xScale(xValue(d, i))) + "," +
                     (yScale(yValue(d, i))) + ")"; });
 
-        boxesTransition.select("rect")
-            .attr("x", -BOX_WIDTH/2)
-            .attr("y", -BOX_HEIGHT/2)
-            .attr("ry", 5)
-            .attr("ry", 5)
-            .attr("width", BOX_WIDTH)
-            .attr("height", BOX_HEIGHT)
-            .attr("fill", function (d, i) {
-                return colScale(keyValue(d, i));
-                // return colScale(dAvgRank.get(keyValue(d, i)));
-            });
+        if (showBoxes) {
+            boxesTransition.select("rect")
+                .attr("x", -BOX_WIDTH/2)
+                .attr("y", -BOX_HEIGHT/2)
+                .attr("ry", 5)
+                .attr("ry", 5)
+                .attr("width", BOX_WIDTH)
+                .attr("height", BOX_HEIGHT)
+                .attr("fill", function (d, i) {
+                    return colScale(keyValue(d, i));
+                    // return colScale(dAvgRank.get(keyValue(d, i)));
+                });
+
+        }
 
 
         var size=Math.min(IMG_WIDTH, IMG_HEIGHT);
@@ -457,6 +475,23 @@ function bumpChartPhotos() {
         isBumpChart = _;
         return chart;
     };
+    chart.boxW = function(_) {
+        if (!arguments.length) return BOX_WIDTH;
+        boxW = _;
+        return chart;
+    };
+    chart.boxH = function(_) {
+        if (!arguments.length) return BOX_HEIGHT;
+        boxH = _;
+        return chart;
+    };
+    chart.showBoxes = function(_) {
+        if (!arguments.length) return showBoxes;
+        showBoxes = _;
+        return chart;
+    };
+
+
 
     return chart;
 }
