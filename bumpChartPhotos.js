@@ -39,9 +39,11 @@ function bumpChartPhotos() {
     isBumpChart = true,
     showBoxes = false,
     colorByRank = false,
+    showDemo = true,
     dAvgRank,
     dFirstDate,
-    data, nestedData;
+    data, nestedData, lastRound,
+    nextDemo = null; // keep track of the last timeout
 
     function processData(mdata) {
         if (isBumpChart) {
@@ -49,6 +51,9 @@ function bumpChartPhotos() {
         } else {
             data = mdata;
         }
+        var maxRound = d3.max(data, function (d) { return d.round; });
+        lastRound = data.filter(function (d) { return d.round === maxRound;})
+            .sort(function (a,b) { return d3.ascending(a.ranking, b.ranking);})
         dFirstDate = d3.map();
 
         nestedData = d3.nest()
@@ -93,6 +98,7 @@ function bumpChartPhotos() {
     function chart(selection) {
         selection.each(function(mdata) {
 
+
             // Convert data to standard representation greedily;
             // this is needed for nondeterministic accessors.
             processData(mdata);
@@ -132,8 +138,28 @@ function bumpChartPhotos() {
 
             chart.update(nestedData, data);
 
+            if (showDemo) {
+                var selected = 0;
+
+                function runDemo() {
+                    clearTimeout(nextDemo);
+                    console.log("demo selected"+ selected);
+                    clearHighlight();
+                    hight(keyValue(lastRound[selected], selected) );
+                    selected = (selected + 1) % lastRound.length;
+
+                    if (showDemo) {
+                        nextDemo = setTimeout(runDemo, 1000);
+                    }
+
+                }
+
+                nextDemo = setTimeout(runDemo, 2500);
+            }
+
         });
     }
+
 
     function onHoverBox(d) {
         if (IMG_WIDTH < HOVER_IMG_WH) {
@@ -218,7 +244,7 @@ function bumpChartPhotos() {
         svg.select(".mainArea").select(".y.axis")
             .call(yAxis)
             .attr("transform", "translate(" + (-1 * BOX_WIDTH /2 - 20) +  "," + 0 +")")
-            .select(".legend").text(yLabel).attr("dy", -25).attr("dx", -7).style("text-anchor", "middle");
+            .select(".legend").text(yLabel).attr("dy", -32).attr("dx", -25).style("text-anchor", "start");
 
 
 
@@ -238,13 +264,14 @@ function bumpChartPhotos() {
         lines.enter()
             .append("path")
             .attr("class", function (d, i) { return "line key" + d.key; })
-            .on("mouseover", function (d) {
+            .on("mouseover", function (d, i) {
                 console.log(d);
+                showDemo=false;
                 hight(d.key); })
             .on("mouseout", clearHighlight)
             .on("click", function (d) { console.log(d); })
             .append("title")
-                .text(function (d) { return d.key; });
+                .text(function (d, i) { return d.key; });
         lines
             .sort(function (a, b) {
                 if (isBumpChart) {
@@ -273,7 +300,10 @@ function bumpChartPhotos() {
         var boxEnter = boxes.enter()
             .append("g")
             .attr("class", function (d, i) { return "box key" + keyValue(d, i); })
-            .on("mouseover", function (d, i) {  hight(keyValue(d, i) ); })
+            .on("mouseover", function (d, i) {
+                showDemo=false;
+                hight(keyValue(d, i) );
+            })
             .on("mouseout", clearHighlight)
             .on("click", function (d, i) { return onClick(d, i); })
             // .on("mouseover", onHoverBox)
@@ -327,7 +357,7 @@ function bumpChartPhotos() {
             .attr("x", -size/2)
             .attr("y", -size/2+5)
             .attr("width", size)
-            // .attr("height", Math.max(IMG_WIDTH, IMG_HEIGHT))
+            .attr("height", size*0.7)
             .attr("clip-path", "url(#cut-off)")
             // .attr("fill", function (d) { return "url(#"+d.team+")"; })
             // .attr("height", IMG_HEIGHT)
@@ -351,10 +381,6 @@ function bumpChartPhotos() {
 
         boxes.exit()
             .remove();
-
-
-
-
 
     };
 
@@ -490,7 +516,11 @@ function bumpChartPhotos() {
         showBoxes = _;
         return chart;
     };
-
+    chart.showDemo = function(_) {
+        if (!arguments.length) return showDemo;
+        showDemo = _;
+        return chart;
+    };
 
 
     return chart;
