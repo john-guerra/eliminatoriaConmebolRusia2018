@@ -103,16 +103,19 @@ function redrawRanges(filteredData) {
   }).sort(function (a, b) { return d3.ascending(a.ranking, b.ranking); });
 
   var classifiedData = [
-    {range: [lastRound[0],lastRound[3]],
+    {range: [lastRound[0], myBumpChart.isBumpChart() ? lastRound[3] :lastRound[4] ],
       name: "Clasifican",
+      anchor: "end",
       color: "#00c70d"
     },
-    {range: [lastRound[4],lastRound[4]],
+    {range: [lastRound[4],myBumpChart.isBumpChart() ? lastRound[4] :lastRound[5]],
       name: "Repechaje",
+      anchor: "middle",
       color: "#e6de42"
     },
     {range: [lastRound[5],lastRound[lastRound.length-1]],
       name: "Eliminados",
+      anchor: "start",
       color: "#f55a5a"
     }
   ]
@@ -134,7 +137,7 @@ function redrawRanges(filteredData) {
   }
 
   //How much space is there between two teams
-  separation = chartY(lastRound[1]) - chartY(lastRound[0]);
+  separation = myBumpChart.isBumpChart() ? chartY(lastRound[1]) - chartY(lastRound[0]):  0;
   classifiedSel
     .transition()
     .duration(500)
@@ -154,7 +157,7 @@ function redrawRanges(filteredData) {
       .attr("height", function (d) { return chartY(d.range[1]) - chartY(d.range[0]) + separation; });
   classifiedSel
     .select(".legend")
-      .style("text-anchor", "middle")
+      .style("text-anchor", function (d) { return d.anchor; })
       .text(function (d) { return d.name; })
       .transition()
       .duration(500)
@@ -167,7 +170,6 @@ function redrawRanges(filteredData) {
       });
 
   classifiedSel.exit().remove();
-
 }
 
 function redraw() {
