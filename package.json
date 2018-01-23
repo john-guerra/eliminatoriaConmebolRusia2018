@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "d3": "^4.12.2",
     "fs": "0.0.1-security",
     "jquery": "^3.2.1",
     "loadash": "0.0.1",

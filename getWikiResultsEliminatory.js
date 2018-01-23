@@ -1,4 +1,4 @@
-
+"use strict";
 //Code
 
 var scraperjs = require("scraperjs");
@@ -12,7 +12,7 @@ function getMatches(wikiPageUrl, timeZone){
     .scrape(function($) {
 
       let i = 0;
-      return $(".vevent").map(function() {
+      return $("table.vevent").map(function() {
 
 
         // console.log($(this));

@@ -38,6 +38,7 @@ function bumpChartPhotos() {
     line = d3.svg.line().x(X).y(Y).interpolate("cardinal"),
     isBumpChart = true,
     showBoxes = false,
+    useClipPath = true,
     colorByRank = false,
     showDemo = true,
     dAvgRank,
@@ -121,14 +122,18 @@ function bumpChartPhotos() {
 
             // Otherwise, create the skeletal chart.
             var svgEnter = svg.enter().append("svg");
-            svgEnter.append("clipPath")
-                .attr("clipPathUnits", "objectBoundingBox")
-                .attr("id", "cut-off")
-                .append("ellipse")
-                .attr("cx", 0.5)
-                .attr("cy", 0.5)
-                .attr("ry", 0.49)
-                .attr("rx", 0.35);
+
+            if (useClipPath) {
+                svgEnter.append("clipPath")
+                    .attr("clipPathUnits", "objectBoundingBox")
+                    .attr("id", "cut-off")
+                    .append("ellipse")
+                    .attr("cx", 0.5)
+                    .attr("cy", 0.5)
+                    .attr("ry", 0.49)
+                    .attr("rx", 0.35);
+            }
+
 
             var gEnter = svgEnter.append("g").attr("class", "mainArea");
             gEnter.append("g").attr("class", "lines");
@@ -149,7 +154,7 @@ function bumpChartPhotos() {
                     selected = (selected + 1) % lastRound.length;
 
                     if (showDemo) {
-                        nextDemo = setTimeout(runDemo, 1000);
+                        nextDemo = setTimeout(runDemo, 1500);
                     }
 
                 }
@@ -244,7 +249,7 @@ function bumpChartPhotos() {
         svg.select(".mainArea").select(".y.axis")
             .call(yAxis)
             .attr("transform", "translate(" + (-1 * BOX_WIDTH /2 - 20) +  "," + 0 +")")
-            .select(".legend").text(yLabel).attr("dy", -32).attr("dx", -25).style("text-anchor", "start");
+            .select(".legend").text(yLabel).attr("dy", -32).attr("dx", -13).style("text-anchor", "start");
 
 
 
@@ -358,7 +363,7 @@ function bumpChartPhotos() {
             .attr("y", -size/2+5)
             .attr("width", size)
             .attr("height", size*0.7)
-            .attr("clip-path", "url(#cut-off)")
+            .attr("clip-path", useClipPath? "url(#cut-off)" : "")
             // .attr("fill", function (d) { return "url(#"+d.team+")"; })
             // .attr("height", IMG_HEIGHT)
             // .style("opacity", function (d, i) {
@@ -521,7 +526,11 @@ function bumpChartPhotos() {
         showDemo = _;
         return chart;
     };
-
+    chart.useClipPath = function(_) {
+        if (!arguments.length) return useClipPath;
+        useClipPath = _;
+        return chart;
+    };
 
     return chart;
 }
